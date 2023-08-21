@@ -1,0 +1,44 @@
+{
+    "browser": {
+        "name": "chromium",
+        "headless": true,
+        "channel": "chromium",
+        "arguments": ["--use-fake-ui-for-media-stream", "--use-fake-device-for-media-stream",
+            "--use-file-for-fake-video-capture=path/to/file.y4m"],
+        "delay_miliseconds": 100,
+        "default_timeout_miliseconds": 60000
+    },
+    "report": {
+        "screenshot_on_fail": "true",
+        "screenshot_on_info": "false"
+    },
+    "aut": {
+        "environment": "staging",
+        "staging": "https://qa-staging.spearline.com",
+        "development": "https://platformdev.spearline.dev",
+        "production": "https://platform.spearline.com",
+        "ticket": "https://telecomstack8294-platformdev.spearline.dev",
+        "username": "qa.service@cyara.com",
+        "password": "T3STp4ss!"
+    },
+    "v6": {
+        "environment": "development",
+        "staging": "https://platform-staging.spearline.com",
+        "development": "https://platformdev.spearline.dev",
+        "production": "https://platform.spearline.com",
+        "ticket": "",
+        "username": "dwaita.acharya@cyara.com",
+        "password": "Test@1234"
+    },
+    "api": {
+        "environment": "staging",
+        "staging": "https://api-staging.spearline.com",
+        "development": "https://apidev.spearline.dev",
+        "production": "https://api.spearline.com",
+        "ticket": "",
+        "username": "qa.service@cyara.com",
+        "password": "T3STp4ss!",
+        "username_b": "qa.automation@cyara.com",
+        "password_b": "automation"
+    }
+}
